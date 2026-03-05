@@ -15,3 +15,18 @@ def menu():
 
 
 menu() 
+
+def addReceipt():
+    print("Enter the Date, ShopName, Amount: ")
+
+
+def Display():
+    print("The results: ")
+
+
+def update():
+    print("Make the changes here!")
+
+def exit():
+    print("Thanks for using!")
+
