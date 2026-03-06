@@ -1,26 +1,17 @@
-# main program 
-
 print("***WELCOME*** \n***EXPENSE CALCULATOR***\n")
 
 
-def menu():
-    print("Choose the number from MENU to perform the desired action. \n")
-    print("1) Add Receipt\n2) Display\n3) Update\n4) Exit\n ")
-    choice = input("Enter your choice: ")
-
-    while choice=="":
-        print("\nChoose the number from MENU to perform the desired action. \n")
-        print("1) Add Receipt\n2) Display\n3) Update\n4) Exit ")
-        choice = input("Enter your choice: ")
-
-
-menu() 
-
 def addReceipt():
     print("Enter the Date, ShopName, Amount: ")
+    purchase_Date = input("Enter the Date of Purchase: ")
+    shop_Name = input("Enter the Shop Name: ")
+    purchase_Amount = float(input("Enter the Purchase Amount: "))
+
+    print(f"Purchase Date: {purchase_Date}, Shop Name: {shop_Name}, Amount: {purchase_Amount} ")
 
 
-def Display():
+
+def display():
     print("The results: ")
 
 
@@ -30,3 +21,27 @@ def update():
 def exit():
     print("Thanks for using!")
 
+def main():
+    print("Choose the number from MENU to perform the desired action. \n")
+    print("1) Add Receipt\n2) Display\n3) Update\n4) Exit\n ")
+    choice = input("Enter your choice: ")
+
+    while choice=="":
+        print("\nChoose the number from MENU to perform the desired action. \n")
+        print("1) Add Receipt\n2) Display\n3) Update\n4) Exit ")
+        choice = input("Enter your choice: ")
+
+    match choice:
+
+        case "1":
+            addReceipt()
+        case "2":
+            display()
+        case "3":
+            update()
+        case "4":
+            exit()
+        case _:
+            print("Invalid Choice!")
+
+main()
