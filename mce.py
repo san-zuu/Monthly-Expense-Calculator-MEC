@@ -2,12 +2,12 @@ print("***WELCOME*** \n***EXPENSE CALCULATOR***\n")
 
 
 def addReceipt():
-    print("Enter the Date, ShopName, Amount: ")
-    purchase_Date = input("Enter the Date of Purchase: ")
-    shop_Name = input("Enter the Shop Name: ")
-    purchase_Amount = float(input("Enter the Purchase Amount: "))
+    print("Enter the Date, ShopName, Amount: \n")
+    purchase_Date = input("Enter the Date of Purchase: \n")
+    shop_Name = input("Enter the Shop Name: \n")
+    purchase_Amount = float(input("Enter the Purchase Amount: \n"))
 
-    print(f"Purchase Date: {purchase_Date}, Shop Name: {shop_Name}, Amount: {purchase_Amount} ")
+    print(f"Purchase Date: {purchase_Date}, Shop Name: {shop_Name}, Amount: {purchase_Amount} € ")
 
 
 
@@ -16,7 +16,7 @@ def display():
 
 
 def update():
-    print("Make the changes here!")
+    print("Make the changes here!") 
 
 def exit():
     print("Thanks for using!")
@@ -43,5 +43,6 @@ def main():
             exit()
         case _:
             print("Invalid Choice!")
+
 
 main()
